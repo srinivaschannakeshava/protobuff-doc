@@ -1,0 +1,43 @@
+plugins {
+    id "com.google.protobuf" version "0.8.19"
+	id 'java'
+}
+
+group = 'in.srini91'
+version = '1.0.0'
+sourceCompatibility = '11'
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    
+    implementation 'com.google.protobuf:protobuf-java:3.21.6'
+    implementation 'io.grpc:grpc-protobuf:1.49.1'
+    implementation 'io.grpc:grpc-stub:1.49.1'
+    implementation 'io.grpc:grpc-netty:1.49.1'
+    compileOnly 'org.apache.tomcat:tomcat-annotations-api:9.0.65'
+  //  implementation 'io.grpc:grpc-all:1.49.1'
+    
+//	compileOnly 'org.projectlombok:lombok'
+//	annotationProcessor 'org.projectlombok:lombok'
+}
+
+protobuf{
+    protoc {artifact = "com.google.protobuf:protoc:3.21.6"}
+    plugins{
+        grpc {artifact = "io.grpc:protoc-gen-grpc-java:1.49.1"}
+    }
+    generateProtoTasks{
+        all()*.plugins {grpc {}}
+    }
+    // default proto plugin generate stub in build folder
+    // change the stub generate folder
+    generatedFilesBaseDir = "$projectDir/src"
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
