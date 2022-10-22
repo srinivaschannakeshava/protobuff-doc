@@ -63,11 +63,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            in.srini91.learn.protos.test.Address.Builder subBuilder = null;
+            in.srini91.learn.protos.test.common.Address.Builder subBuilder = null;
             if (address_ != null) {
               subBuilder = address_.toBuilder();
             }
-            address_ = input.readMessage(in.srini91.learn.protos.test.Address.parser(), extensionRegistry);
+            address_ = input.readMessage(in.srini91.learn.protos.test.common.Address.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(address_);
               address_ = subBuilder.buildPartial();
@@ -77,11 +77,11 @@ private static final long serialVersionUID = 0L;
           }
           case 34: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              car_ = new java.util.ArrayList<in.srini91.learn.protos.test.Car>();
+              car_ = new java.util.ArrayList<in.srini91.learn.protos.test.common.Car>();
               mutable_bitField0_ |= 0x00000001;
             }
             car_.add(
-                input.readMessage(in.srini91.learn.protos.test.Car.parser(), extensionRegistry));
+                input.readMessage(in.srini91.learn.protos.test.common.Car.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -171,9 +171,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ADDRESS_FIELD_NUMBER = 3;
-  private in.srini91.learn.protos.test.Address address_;
+  private in.srini91.learn.protos.test.common.Address address_;
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    * @return Whether the address field is set.
    */
   @java.lang.Override
@@ -181,57 +181,57 @@ private static final long serialVersionUID = 0L;
     return address_ != null;
   }
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    * @return The address.
    */
   @java.lang.Override
-  public in.srini91.learn.protos.test.Address getAddress() {
-    return address_ == null ? in.srini91.learn.protos.test.Address.getDefaultInstance() : address_;
+  public in.srini91.learn.protos.test.common.Address getAddress() {
+    return address_ == null ? in.srini91.learn.protos.test.common.Address.getDefaultInstance() : address_;
   }
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    */
   @java.lang.Override
-  public in.srini91.learn.protos.test.AddressOrBuilder getAddressOrBuilder() {
+  public in.srini91.learn.protos.test.common.AddressOrBuilder getAddressOrBuilder() {
     return getAddress();
   }
 
   public static final int CAR_FIELD_NUMBER = 4;
-  private java.util.List<in.srini91.learn.protos.test.Car> car_;
+  private java.util.List<in.srini91.learn.protos.test.common.Car> car_;
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<in.srini91.learn.protos.test.Car> getCarList() {
+  public java.util.List<in.srini91.learn.protos.test.common.Car> getCarList() {
     return car_;
   }
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends in.srini91.learn.protos.test.CarOrBuilder> 
+  public java.util.List<? extends in.srini91.learn.protos.test.common.CarOrBuilder> 
       getCarOrBuilderList() {
     return car_;
   }
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   @java.lang.Override
   public int getCarCount() {
     return car_.size();
   }
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   @java.lang.Override
-  public in.srini91.learn.protos.test.Car getCar(int index) {
+  public in.srini91.learn.protos.test.common.Car getCar(int index) {
     return car_.get(index);
   }
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   @java.lang.Override
-  public in.srini91.learn.protos.test.CarOrBuilder getCarOrBuilder(
+  public in.srini91.learn.protos.test.common.CarOrBuilder getCarOrBuilder(
       int index) {
     return car_.get(index);
   }
@@ -749,31 +749,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private in.srini91.learn.protos.test.Address address_;
+    private in.srini91.learn.protos.test.common.Address address_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        in.srini91.learn.protos.test.Address, in.srini91.learn.protos.test.Address.Builder, in.srini91.learn.protos.test.AddressOrBuilder> addressBuilder_;
+        in.srini91.learn.protos.test.common.Address, in.srini91.learn.protos.test.common.Address.Builder, in.srini91.learn.protos.test.common.AddressOrBuilder> addressBuilder_;
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      * @return Whether the address field is set.
      */
     public boolean hasAddress() {
       return addressBuilder_ != null || address_ != null;
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      * @return The address.
      */
-    public in.srini91.learn.protos.test.Address getAddress() {
+    public in.srini91.learn.protos.test.common.Address getAddress() {
       if (addressBuilder_ == null) {
-        return address_ == null ? in.srini91.learn.protos.test.Address.getDefaultInstance() : address_;
+        return address_ == null ? in.srini91.learn.protos.test.common.Address.getDefaultInstance() : address_;
       } else {
         return addressBuilder_.getMessage();
       }
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
-    public Builder setAddress(in.srini91.learn.protos.test.Address value) {
+    public Builder setAddress(in.srini91.learn.protos.test.common.Address value) {
       if (addressBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -787,10 +787,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
     public Builder setAddress(
-        in.srini91.learn.protos.test.Address.Builder builderForValue) {
+        in.srini91.learn.protos.test.common.Address.Builder builderForValue) {
       if (addressBuilder_ == null) {
         address_ = builderForValue.build();
         onChanged();
@@ -801,13 +801,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
-    public Builder mergeAddress(in.srini91.learn.protos.test.Address value) {
+    public Builder mergeAddress(in.srini91.learn.protos.test.common.Address value) {
       if (addressBuilder_ == null) {
         if (address_ != null) {
           address_ =
-            in.srini91.learn.protos.test.Address.newBuilder(address_).mergeFrom(value).buildPartial();
+            in.srini91.learn.protos.test.common.Address.newBuilder(address_).mergeFrom(value).buildPartial();
         } else {
           address_ = value;
         }
@@ -819,7 +819,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
     public Builder clearAddress() {
       if (addressBuilder_ == null) {
@@ -833,33 +833,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
-    public in.srini91.learn.protos.test.Address.Builder getAddressBuilder() {
+    public in.srini91.learn.protos.test.common.Address.Builder getAddressBuilder() {
       
       onChanged();
       return getAddressFieldBuilder().getBuilder();
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
-    public in.srini91.learn.protos.test.AddressOrBuilder getAddressOrBuilder() {
+    public in.srini91.learn.protos.test.common.AddressOrBuilder getAddressOrBuilder() {
       if (addressBuilder_ != null) {
         return addressBuilder_.getMessageOrBuilder();
       } else {
         return address_ == null ?
-            in.srini91.learn.protos.test.Address.getDefaultInstance() : address_;
+            in.srini91.learn.protos.test.common.Address.getDefaultInstance() : address_;
       }
     }
     /**
-     * <code>.Address address = 3;</code>
+     * <code>.common.Address address = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        in.srini91.learn.protos.test.Address, in.srini91.learn.protos.test.Address.Builder, in.srini91.learn.protos.test.AddressOrBuilder> 
+        in.srini91.learn.protos.test.common.Address, in.srini91.learn.protos.test.common.Address.Builder, in.srini91.learn.protos.test.common.AddressOrBuilder> 
         getAddressFieldBuilder() {
       if (addressBuilder_ == null) {
         addressBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            in.srini91.learn.protos.test.Address, in.srini91.learn.protos.test.Address.Builder, in.srini91.learn.protos.test.AddressOrBuilder>(
+            in.srini91.learn.protos.test.common.Address, in.srini91.learn.protos.test.common.Address.Builder, in.srini91.learn.protos.test.common.AddressOrBuilder>(
                 getAddress(),
                 getParentForChildren(),
                 isClean());
@@ -868,22 +868,22 @@ private static final long serialVersionUID = 0L;
       return addressBuilder_;
     }
 
-    private java.util.List<in.srini91.learn.protos.test.Car> car_ =
+    private java.util.List<in.srini91.learn.protos.test.common.Car> car_ =
       java.util.Collections.emptyList();
     private void ensureCarIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        car_ = new java.util.ArrayList<in.srini91.learn.protos.test.Car>(car_);
+        car_ = new java.util.ArrayList<in.srini91.learn.protos.test.common.Car>(car_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        in.srini91.learn.protos.test.Car, in.srini91.learn.protos.test.Car.Builder, in.srini91.learn.protos.test.CarOrBuilder> carBuilder_;
+        in.srini91.learn.protos.test.common.Car, in.srini91.learn.protos.test.common.Car.Builder, in.srini91.learn.protos.test.common.CarOrBuilder> carBuilder_;
 
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public java.util.List<in.srini91.learn.protos.test.Car> getCarList() {
+    public java.util.List<in.srini91.learn.protos.test.common.Car> getCarList() {
       if (carBuilder_ == null) {
         return java.util.Collections.unmodifiableList(car_);
       } else {
@@ -891,7 +891,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public int getCarCount() {
       if (carBuilder_ == null) {
@@ -901,9 +901,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public in.srini91.learn.protos.test.Car getCar(int index) {
+    public in.srini91.learn.protos.test.common.Car getCar(int index) {
       if (carBuilder_ == null) {
         return car_.get(index);
       } else {
@@ -911,10 +911,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder setCar(
-        int index, in.srini91.learn.protos.test.Car value) {
+        int index, in.srini91.learn.protos.test.common.Car value) {
       if (carBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -928,10 +928,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder setCar(
-        int index, in.srini91.learn.protos.test.Car.Builder builderForValue) {
+        int index, in.srini91.learn.protos.test.common.Car.Builder builderForValue) {
       if (carBuilder_ == null) {
         ensureCarIsMutable();
         car_.set(index, builderForValue.build());
@@ -942,9 +942,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public Builder addCar(in.srini91.learn.protos.test.Car value) {
+    public Builder addCar(in.srini91.learn.protos.test.common.Car value) {
       if (carBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -958,10 +958,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder addCar(
-        int index, in.srini91.learn.protos.test.Car value) {
+        int index, in.srini91.learn.protos.test.common.Car value) {
       if (carBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -975,10 +975,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder addCar(
-        in.srini91.learn.protos.test.Car.Builder builderForValue) {
+        in.srini91.learn.protos.test.common.Car.Builder builderForValue) {
       if (carBuilder_ == null) {
         ensureCarIsMutable();
         car_.add(builderForValue.build());
@@ -989,10 +989,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder addCar(
-        int index, in.srini91.learn.protos.test.Car.Builder builderForValue) {
+        int index, in.srini91.learn.protos.test.common.Car.Builder builderForValue) {
       if (carBuilder_ == null) {
         ensureCarIsMutable();
         car_.add(index, builderForValue.build());
@@ -1003,10 +1003,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder addAllCar(
-        java.lang.Iterable<? extends in.srini91.learn.protos.test.Car> values) {
+        java.lang.Iterable<? extends in.srini91.learn.protos.test.common.Car> values) {
       if (carBuilder_ == null) {
         ensureCarIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1018,7 +1018,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder clearCar() {
       if (carBuilder_ == null) {
@@ -1031,7 +1031,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
     public Builder removeCar(int index) {
       if (carBuilder_ == null) {
@@ -1044,16 +1044,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public in.srini91.learn.protos.test.Car.Builder getCarBuilder(
+    public in.srini91.learn.protos.test.common.Car.Builder getCarBuilder(
         int index) {
       return getCarFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public in.srini91.learn.protos.test.CarOrBuilder getCarOrBuilder(
+    public in.srini91.learn.protos.test.common.CarOrBuilder getCarOrBuilder(
         int index) {
       if (carBuilder_ == null) {
         return car_.get(index);  } else {
@@ -1061,9 +1061,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public java.util.List<? extends in.srini91.learn.protos.test.CarOrBuilder> 
+    public java.util.List<? extends in.srini91.learn.protos.test.common.CarOrBuilder> 
          getCarOrBuilderList() {
       if (carBuilder_ != null) {
         return carBuilder_.getMessageOrBuilderList();
@@ -1072,33 +1072,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public in.srini91.learn.protos.test.Car.Builder addCarBuilder() {
+    public in.srini91.learn.protos.test.common.Car.Builder addCarBuilder() {
       return getCarFieldBuilder().addBuilder(
-          in.srini91.learn.protos.test.Car.getDefaultInstance());
+          in.srini91.learn.protos.test.common.Car.getDefaultInstance());
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public in.srini91.learn.protos.test.Car.Builder addCarBuilder(
+    public in.srini91.learn.protos.test.common.Car.Builder addCarBuilder(
         int index) {
       return getCarFieldBuilder().addBuilder(
-          index, in.srini91.learn.protos.test.Car.getDefaultInstance());
+          index, in.srini91.learn.protos.test.common.Car.getDefaultInstance());
     }
     /**
-     * <code>repeated .Car car = 4;</code>
+     * <code>repeated .common.Car car = 4;</code>
      */
-    public java.util.List<in.srini91.learn.protos.test.Car.Builder> 
+    public java.util.List<in.srini91.learn.protos.test.common.Car.Builder> 
          getCarBuilderList() {
       return getCarFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        in.srini91.learn.protos.test.Car, in.srini91.learn.protos.test.Car.Builder, in.srini91.learn.protos.test.CarOrBuilder> 
+        in.srini91.learn.protos.test.common.Car, in.srini91.learn.protos.test.common.Car.Builder, in.srini91.learn.protos.test.common.CarOrBuilder> 
         getCarFieldBuilder() {
       if (carBuilder_ == null) {
         carBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            in.srini91.learn.protos.test.Car, in.srini91.learn.protos.test.Car.Builder, in.srini91.learn.protos.test.CarOrBuilder>(
+            in.srini91.learn.protos.test.common.Car, in.srini91.learn.protos.test.common.Car.Builder, in.srini91.learn.protos.test.common.CarOrBuilder>(
                 car_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

@@ -26,41 +26,41 @@ public interface PersonOrBuilder extends
   int getAge();
 
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    * @return Whether the address field is set.
    */
   boolean hasAddress();
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    * @return The address.
    */
-  in.srini91.learn.protos.test.Address getAddress();
+  in.srini91.learn.protos.test.common.Address getAddress();
   /**
-   * <code>.Address address = 3;</code>
+   * <code>.common.Address address = 3;</code>
    */
-  in.srini91.learn.protos.test.AddressOrBuilder getAddressOrBuilder();
+  in.srini91.learn.protos.test.common.AddressOrBuilder getAddressOrBuilder();
 
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
-  java.util.List<in.srini91.learn.protos.test.Car> 
+  java.util.List<in.srini91.learn.protos.test.common.Car> 
       getCarList();
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
-  in.srini91.learn.protos.test.Car getCar(int index);
+  in.srini91.learn.protos.test.common.Car getCar(int index);
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
   int getCarCount();
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
-  java.util.List<? extends in.srini91.learn.protos.test.CarOrBuilder> 
+  java.util.List<? extends in.srini91.learn.protos.test.common.CarOrBuilder> 
       getCarOrBuilderList();
   /**
-   * <code>repeated .Car car = 4;</code>
+   * <code>repeated .common.Car car = 4;</code>
    */
-  in.srini91.learn.protos.test.CarOrBuilder getCarOrBuilder(
+  in.srini91.learn.protos.test.common.CarOrBuilder getCarOrBuilder(
       int index);
 }

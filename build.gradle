@@ -38,6 +38,14 @@ protobuf{
     generatedFilesBaseDir = "$projectDir/src"
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/proto','src/main/grpc'
+        }
+    }
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }

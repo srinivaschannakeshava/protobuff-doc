@@ -55,17 +55,34 @@
 
 ## proto types - example
 
-| Java        | proto       |
-| ----------- | ----------- |
-| int         | int32       |
-| long        | int64       |
-| float       | float       |
-| double      | double      |
-| boolean     | bool        |
-| String      | string      |
-| byte[]      | bytes       |
-| Collection  | repeated    |
-| Map         | map         |
+| Java        | proto       | Default value |
+| ----------- | ----------- | ------------- |
+| int         | int32       | 0             |
+| long        | int64       | 0             |
+| float       | float       | 0             |
+| double      | double      | 0             |
+| boolean     | bool        | false         |
+| String      | string      | empty string  |
+| byte[]      | bytes       |               |
+| Collection  | repeated    | empty list    |
+| Map         | map         | empty map     |
+| enum        | enum        | first value   |
 
 ## Note
 > protobuff - doesnt return null value - its either default or empty 
+
+## proto OneOf
+
+## proto wrapper type - `import google/protobuf/wrappers.proto`
+
+## proto tags - 
+
+## Note
+> reserved key word is used for making sure the tag/name isnt used in message updates
+
+# RPC - Types
+ 
+- Unary 
+- Server Streaming
+- Client Streaming 
+- Bidirectional Streaming
